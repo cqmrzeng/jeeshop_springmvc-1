@@ -71,7 +71,7 @@ function defaultProductImg(){
 								<c:out value="${e.ordership.zip}" />
 							</li>
 							
-							<c:if test="${status=='send' or status='sign' }">
+							<c:if test="${status=='send' || status=='sign' }">
 								<li class="list-group-item">
 									<b>快递信息：</b>
 									<a target="_blank" href="http://www.kuaidi100.com/chaxun?com=<c:out value="e.expressCompanyName" />&nu=<c:out value="e.expressNo" />">快递物流</a>

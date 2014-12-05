@@ -199,13 +199,11 @@ body{
 					 	<c:if test="${row.showInNav =='y' }">
 							<c:choose>
 								<c:when test="${row.id == sessionScope.selectMenu}}">
-								   <li class="active"><a href="<%=request.getContextPath()%>/
-							 		catalog/<c:out  value="${row.code}" />.html">
+								   <li class="active"><a href="<%=request.getContextPath()%>/catalog/<c:out  value="${row.code}" />.html">
 							 		<b><c:out  value="${row.name}" /></b></a></li>
 								</c:when>
 								<c:otherwise>
-								    <li><a href="<%=request.getContextPath()%>/
-								    catalog/<c:out  value="${row.code}" />.html"><b>
+								    <li><a href="<%=request.getContextPath()%>/catalog/<c:out  value="${row.code}" />.html"><b>
 								    <c:out  value="${row.name}" /></b></a></li>
 								</c:otherwise>
 							</c:choose>

@@ -117,7 +117,7 @@ function checkStockFunc(){
 //通知购物车
 function notifyCart(_obj){
 	//var _url = "cart/notifyCart.html?currentBuyNumber="+_obj.val()+"&productID="+_obj.attr("pid")+"&date="+(new Date().getTime());
-	var _url = "cart/notifyCart.html?currentBuyNumber="+_obj.val()+"&productID="+_obj.attr("pid")+"&radom="+Math.random();
+	var _url = "../cart/notifyCart.html?currentBuyNumber="+_obj.val()+"&productID="+_obj.attr("pid")+"&radom="+Math.random();
 	console.log("_url="+_url);
 	$.ajax({
 	  type: 'POST',
@@ -173,7 +173,7 @@ function addToCart(){
 	if(!checkStockFunc()){
 		return false;
 	}
-	var _url = "cart!addToCart.action?productID="+$("#productID").val()+"&buyCount="+$("#inputBuyNum").val()+"&buySpecID="+$("#specIdHidden").val();
+	var _url = "../cart/addToCart.html?productID="+$("#productID").val()+"&buyCount="+$("#inputBuyNum").val()+"&buySpecID="+$("#specIdHidden").val();
 	$.ajax({
 	  type: 'POST',
 	  url: _url,
@@ -183,6 +183,8 @@ function addToCart(){
 		if(data==0){
 			$("#addToCartBtn").attr("data-original-title",data.tips).tooltip('destroy');
 			$('#myModal').modal('toggle');
+		}else if(data=='1'){
+			$("#addToCartBtn").attr("data-original-title","使用此功能需要先登陆！").tooltip('show');
 		}else{
 			console.log("出现错误。data.tips="+data.tips);
 			
@@ -200,7 +202,7 @@ function addToCart(){
 
 //最后一次检查库存
 function checkStockLastTime(){
-	var _url = "cart/checkStockLastTime.html?radom="+Math.random();
+	var _url = "../cart/checkStockLastTime.html?radom="+Math.random();
 	console.log("_url="+_url);
 	var result;
 	$.ajax({

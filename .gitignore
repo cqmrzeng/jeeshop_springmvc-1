@@ -8,3 +8,12 @@
 *.war
 
 *.ear
+
+.*
+
+*.doc
+*.txt
+
+target/
+
+My97DatePicker/¿ª·¢°ü

@@ -41,7 +41,7 @@ function changeStyle(){
 </head>
 
 <body style="padding: 5px;">
-<form action="systemSetting" namespace="/manage" theme="simple" id="form">
+<form action="systemSetting" namespace="/manage" theme="simple" id="form" method="post">
 
 <div style="text-align: center;border-bottom: 1px solid #ccc;padding: 5px;">
 	<button method="${ctx}/manage/systemSetting/insertOrupdate.action" class="btn btn-success">

@@ -174,7 +174,7 @@ function defaultProductImg(){
 				</div>
 		
 				<!-- 排序栏 -->
-				<c:if test="${productList !=null and productList.size !=0 }">
+				<c:if test="${pager.getList() !=null and pager.getList().size() !=0 }">
 					<div class="row" style="margin: 0px;">
 						<div class="col-xs-12">
 							<span class="attr_css" style="margin:5px;font-weight: bold;">排序</span>
@@ -226,7 +226,7 @@ function defaultProductImg(){
 				<div class="row">
 					<!-- 商品展示 -->
 					<div >
-					<c:forEach items="${productList}" var="item">
+					<c:forEach items="${pager.getList()}" var="item">
 					  <div class="col-xs-3" style="padding: 5px;text-align: center;">
 							<div class="thumbnail" style="width: 100%; display: block;">
 								<div style="height: 200px;border: 0px solid;text-align: center;">
@@ -262,7 +262,7 @@ function defaultProductImg(){
 						</div>
 					</c:forEach>
 					</div>
-					<c:if test="${ productList==null or productList.size==0 }">
+					<c:if test="${ pager.getList()==null or pager.getList().size()==0 }">
 						抱歉，没有找到<font color='#f40'><%=request.getAttribute("key")!=null?request.getAttribute("key").toString():"" %></font>相关的宝贝!
 						<%request.setAttribute("key",null); %>
 						<br>
@@ -284,7 +284,7 @@ function defaultProductImg(){
 				</div>
 				<div class="row" style="margin-top: 10px;">
 					<div class="col-xs-12" style="border: 0px solid;text-align: right;">
-						<c:if test="${ productList!=null and productList.size !=0}">
+						<c:if test="${ pager.getList()!=null and pager.getList().size() !=0}">
 							<%@ include file="pager.jsp"%>
 						</c:if>
 					</div>

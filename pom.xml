@@ -212,6 +212,7 @@
 			<version>1.6</version>
 		</dependency>
 
+<!-- 
 		<dependency>
 			<groupId>com.test.tanyy</groupId>
 			<artifactId>sinaWeibo</artifactId>
@@ -230,6 +231,7 @@
 			<version>1.0</version>
 			<scope>compile</scope>
 		</dependency>
+ -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>

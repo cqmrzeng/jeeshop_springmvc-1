@@ -399,4 +399,5 @@ public abstract class BaseAction<E extends PagerModel> extends
 		String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 		return basePath;
 	}
+	
 }
