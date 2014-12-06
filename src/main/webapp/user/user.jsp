@@ -29,7 +29,7 @@
 			
 			<div class="col-xs-9">
 			
-				<form role="form" id="form" class="form-horizontal" action="${ctx}/user/saveSetting.html" theme="simple">   
+				<form role="form" id="form" class="form-horizontal" action="${ctx}/user/saveSetting.html" theme="simple" method="post">   
 				  <input type="hidden" name="id" value="<c:out value="${sessionScope.user_info.id}"/>"/>
 				  <div class="form-group">
 				    <label for="account" class="col-lg-2 control-label">昵称：</label>

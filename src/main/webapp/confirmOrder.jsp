@@ -63,12 +63,10 @@
 					</li>
 					<li class="list-group-item">
 					
-					
-					
-					<c:if test="${sessionScope.myCart!=null and sessionScope.myCart.addressList.size!=0 }">
+					<!-- c:if test="${sessionScope.myCart!=null and sessionScope.myCart.addressList.size()!=0 }">  -->
 						<c:choose>
 						
-						<c:when test="${sessionScope.myCart!=null and sessionScope.myCart.addressList.size!=0 }">
+						<c:when test="${sessionScope.myCart!=null and sessionScope.myCart.addressList.size()!=0 }">
 							<div class="row">
 								<div class="col-xs-12" style="line-height: 20px;" id="adressListDiv">
 									<c:forEach items="${sessionScope.myCart.addressList}" var="addr">
@@ -76,17 +74,17 @@
 									     <c:when test="${addr.id == sessionScope.myCart.defaultAddessID }">
 									        <div address="address" class="col-xs-3 alert alert-info" style="border: 1px solid;text-align: left;margin-right: 10px;width: 200px;line-height: 20px;cursor: pointer;">
 												<c:out value="${addr.name}" escapeXml="false"/>,<c:out escapeXml="false" value="${addr.phone}"/>
-												<input type="radio" name="${e.selectAddressID}" checked="checked"  value="<c:out escapeXml="false" value="${addr.id}"/>"/>
+												<input type="radio" name="selectAddressID" checked="checked"  value="<c:out escapeXml="false" value="${addr.id}"/>"/>
 												<br>
-												<c:out escapeXml="false" value="${addr.address}"/><br>
+												<c:out escapeXml="false" value="${addr.pcadetail}"/>,<c:out value="${addr.address}" escapeXml="false"/><br>
 											</div>
 									     </c:when>
 									   	 <c:otherwise>
 									   	    <div address="address" class="col-xs-3 alert" style="border: 1px solid;text-align: left;margin-right: 10px;width: 200px;line-height: 20px;cursor: pointer;">
 												<c:out escapeXml="false" value="${addr.name}"/>,<c:out value="${addr.phone}" escapeXml="false"/>
-												<input type="radio" name="${e.selectAddressID}" value="<c:out escapeXml="false" value="${addr.id}"/>"/>
+												<input type="radio" name="selectAddressID" value="<c:out escapeXml="false" value="${addr.id}"/>"/>
 												<br>
-												<c:out value="${addr.address}" escapeXml="false"/><br>
+												<c:out escapeXml="false" value="${addr.pcadetail}"/>,<c:out value="${addr.address}" escapeXml="false"/><br>
 											</div>
 									   	 </c:otherwise>
 									   </c:choose>
@@ -102,7 +100,7 @@
 							</c:if>
 						</c:otherwise>
 						</c:choose>
-					</c:if>
+					<!-- /c:if>  -->
 					
 					
 					
@@ -126,7 +124,7 @@
 									<c:forEach items="${applicationScope.expressMap}" var="expre">
 										<tr style="cursor: pointer;">
 											<td width="400px">
-											<input type="radio" name="e.expressCode" value="<c:out escapeXml="false" value="${expre.key}" />" fee="<c:out escapeXml="false" value="${expre.value.fee}" />"/>
+											<input type="radio" name="expressCode" value="<c:out escapeXml="false" value="${expre.key}" />" fee="<c:out escapeXml="false" value="${expre.value.fee}" />"/>
 											<c:out escapeXml="false" value="${expre.value.name}" /></td>
 											<td><c:out escapeXml="false" value="${expre.value.fee}" /></td>
 										</tr>
@@ -174,7 +172,7 @@
 											<td>
 												<c:out escapeXml="false" value="${prodt.buyCount}" />												
 											</td>
-											<td>&nbsp;<c:out escapeXml="false" value="total0" /></td>
+											<td>&nbsp;<c:out escapeXml="false" value="${prodt.total0}" /></td>
 										</tr>
 									</c:forEach>
 								</table>
@@ -201,7 +199,7 @@
 							
 					<div class="row">
 						<div class="col-xs-6">
-							<input name="e.otherRequirement" class="form-control" placeholder="此处您可以输入您的附加要求，以便我们提供更好的服务。" size="50" maxlength="50"/>	
+							<input name="otherRequirement" class="form-control" placeholder="此处您可以输入您的附加要求，以便我们提供更好的服务。" size="50" maxlength="50"/>	
 						</div>
 						<div class="col-xs-6">
 							<button type="submit" class="btn btn-success" value="提交订单" id="confirmOrderBtn" disabled="disabled">

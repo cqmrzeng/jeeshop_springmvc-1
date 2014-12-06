@@ -115,10 +115,10 @@ function defaultProductImg(){
 						%>
 						
 						
-						<c:if test="${requestScope._children!=null and requestScope._children.size != 0}">
+						<c:if test="${_children!=null and _children.size != 0}">
 							<div>
 								<span style="margin:5px;font-weight: bold;">分类</span>
-								<c:forEach items="${requestScope._children}" var="row">
+								<c:forEach items="${_children}" var="row">
 								 <c:choose>
 								   <c:when test="${row.code == catalogCode }">
 								       <span class="label label-success" style="margin:5px;font-size:100%;">
@@ -136,7 +136,7 @@ function defaultProductImg(){
 						</c:if>
 						
 						
-						<c:if test="${requestScope.attrs!=null and requestScope.attrs.size!=0}">
+						<c:if test="${attrs!=null and attrs.size!=0}">
 							
 							<div class="panel panel-default" style="margin:10px 0px;">
 					              <div class="panel-body" style="font-weight: normal;text-align: center;">

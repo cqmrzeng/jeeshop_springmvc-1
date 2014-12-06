@@ -31,7 +31,7 @@
 			
 			<div class="col-xs-9" style="min-height: 200px;">
 				<div class="row">
-					<form role="form" id="form" class="form-horizontal" action="${ctx}/user/saveAddress.html" theme="simple">   
+					<form role="form" id="form" class="form-horizontal" action="${ctx}/user/saveAddress.html" theme="simple" method="post">   
 <!-- 					  <s:hidden name="address.id"/> -->
 						<input type="hidden" name="id" value="${address.id}"/>
 					  <div class="form-group">
@@ -42,7 +42,7 @@
 					    </div>
 					  </div>
 					  <div class="form-group">
-					    <label for="name" class="col-lg-2 control-label">地址区域12</label>
+					    <label for="name" class="col-lg-2 control-label">地址区域</label>
 					    <div class="col-lg-3">
 					    	<%
 					    	application.setAttribute("_areaMap", SystemManager.areaMap);
@@ -100,7 +100,7 @@
 					    
 					  </div>
 					  <div class="form-group">
-					    <label for="address" class="col-lg-2 control-label">地址1</label>
+					    <label for="address" class="col-lg-2 control-label">地址</label>
 					    <div class="col-lg-6">
 					    	<input type="text" name="address" type="text" value="${address.address}"
 						    class="form-control" id="address" data-rule="地址:required;length[0~70];address;" placeholder="请输入收货人地址" maxlength="70" size="70"/>
