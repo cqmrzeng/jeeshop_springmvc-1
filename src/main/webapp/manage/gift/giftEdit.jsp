@@ -26,7 +26,7 @@ background-color: #d1d1d1;display: none;height: 30px;z-index: 9999;font-size: 18
 		</div>
 	</div>
 	
-	<form action="gift" namespace="/manage" theme="simple" name="form" id="form" >
+	<form action="gift" namespace="/manage" theme="simple" name="form" id="form" method="post">
 <%--         <input type="hidden" name="type" value="${e.type}" /> --%>
 <%-- 		<input type="hidden" value="<c:out value="${e.catalogID}"/>" id="catalogID"/> --%>
 		<input type="hidden" name="type" value="" />

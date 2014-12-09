@@ -30,7 +30,7 @@ background-color: #d1d1d1;display: none;height: 30px;z-index: 9999;font-size: 18
 		提示：对【热门查询】的添加/修改不会立即生效，需要到系统管理--缓存管理页面点击【热门查询关键字】按钮，才能生效。
 	</div>
 	
-	<form action="hotquery" namespace="/manage" theme="simple" name="form" id="form" >
+	<form action="hotquery" namespace="/manage" theme="simple" name="form" id="form" method="post">
 <%-- 		<input type="hidden" name="type" value="${e.type}"> --%>
 <%-- 		<input type="hidden" value="<c:out value="${e.catalogID}"/>" id="catalogID"/> --%>
 		<input type="hidden" name="type" value="" />

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<s:form action="questionnaire" namespace="/manage" theme="simple" id="form">
+<s:form action="questionnaire" namespace="/manage" theme="simple" id="form" method="post">
 
 <div style="text-align: center;border-bottom: 1px solid #ccc;padding: 5px;">
 	<s:if test="e.id=='' or e.id==null">

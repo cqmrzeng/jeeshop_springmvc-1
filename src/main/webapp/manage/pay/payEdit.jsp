@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<form action="pay" namespace="/manage" theme="simple">
+	<form action="pay" namespace="/manage" theme="simple" method="post">
 		<table class="table table-bordered">
 			<tr style="background-color: #dff0d8">
 				<td colspan="2" style="background-color: #dff0d8;text-align: center;">

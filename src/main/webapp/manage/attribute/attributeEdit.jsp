@@ -40,7 +40,7 @@
 	</div>
 	
 	<input type="hidden" value="<c:out value="${e.catalogID}"/>" id="catalogID"/>
-	<form action="attribute" namespace="/manage" theme="simple" id="form">
+	<form action="attribute" namespace="/manage" theme="simple" id="form" method="post">
 		<input type="hidden" name="pid" value="${e.pid}" />
 		<table class="table table-bordered">
 			<tr style="background-color: #dff0d8">

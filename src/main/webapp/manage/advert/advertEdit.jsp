@@ -27,7 +27,7 @@ background-color: #d1d1d1;display: none;height: 30px;z-index: 9999;font-size: 18
 	</div>
 </div>
 	
-<form action="advert" namespace="/manage" theme="simple" name="form1">
+<form action="advert" namespace="/manage" theme="simple" name="form1" method="post">
 			<table class="table table-bordered" style="width: 95%;margin: auto;">
 				<tr>
 					<td colspan="2" style="text-align: center;" >

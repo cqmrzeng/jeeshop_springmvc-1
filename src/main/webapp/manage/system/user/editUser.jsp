@@ -27,7 +27,7 @@
 			<c:set var="formAction" value="'111'" />
 		</c:otherwise>
 	</c:choose>
-	<form action="" namespace="/" theme="simple" id="form">
+	<form action="" namespace="/" theme="simple" id="form" method="post">
 		<table class="table table-bordered">
 			<tr>
 				<td colspan="2"
