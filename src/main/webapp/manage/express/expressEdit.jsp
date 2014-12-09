@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<form action="express" namespace="/manage" theme="simple" id="form">
+<form action="express" namespace="/manage" theme="simple" id="form" method="post">
 
 	<table class="table table-bordered">
 		<tr style="display: none;">
