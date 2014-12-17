@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<form action="commentType" namespace="/manage" theme="simple" onsubmit="return onSubmit();">
+	<form action="commentType" namespace="/manage" theme="simple" method="post" onsubmit="return onSubmit();">
 		<table class="table table-bordered">
 			<tr style="background-color: #dff0d8">
 				<td colspan="2" style="background-color: #dff0d8;text-align: center;">

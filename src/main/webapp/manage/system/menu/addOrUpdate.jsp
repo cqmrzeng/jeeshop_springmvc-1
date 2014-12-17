@@ -79,7 +79,7 @@
 </head>
 
 <body style="text-align: center;">
-<form action="menu" name="form1" namespace="/manage" theme="simple">
+<form action="menu" name="form1" namespace="/manage" theme="simple" method="post">
 <div id="contians_div" style="text-align: right; border: 0px solid red; margin: auto;">
 			<div id="context_div" style="margin-top: 20px;">
 			

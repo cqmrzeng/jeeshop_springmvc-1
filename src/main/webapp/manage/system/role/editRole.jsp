@@ -176,7 +176,7 @@
 </head>
 
 <body>
-	<form action="role" name="form1" theme="simple">
+	<form action="role" name="form1" theme="simple" method="post">
 		<input id="insertOrUpdate" type="hidden" value='<s:property value="${role.insertOrUpdate }"/>' />
 
 		<table class="table table-bordered"

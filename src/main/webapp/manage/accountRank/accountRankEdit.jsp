@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<form action="accountRank" namespace="/manage" theme="simple" id="form" >
+<form action="accountRank" namespace="/manage" theme="simple" id="form" method="post">
 	<table class="table table-bordered">
 		<tr>
 			<td colspan="2" style="background-color: #dff0d8;text-align: center;">

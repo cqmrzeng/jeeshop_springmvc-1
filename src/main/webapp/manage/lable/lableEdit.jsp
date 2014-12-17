@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<s:form action="lable" namespace="/manage" theme="simple">
+	<s:form action="lable" namespace="/manage" theme="simple" method="post">
 		<div id="contians_div" >
 			<div id="context_div" style="margin-top: 5px;">
 				<table id="result_table" class="table table-bordered" style="width: 95%;margin: auto;">

@@ -23,7 +23,7 @@
 	提示：对【商品促销】的添加/修改不会立即生效，需要到系统管理--缓存管理页面点击【加载活动+活动商品列表】按钮，才能生效。
 </div>
 	
-<form action="activity" namespace="/manage" theme="simple" id="form" class="form-horizontal">
+<form action="activity" namespace="/manage" theme="simple" id="form" class="form-horizontal" method="post">
 	<table class="table table-bordered">
 		<tr>
 			<td colspan="2" style="background-color: #dff0d8;text-align: center;">

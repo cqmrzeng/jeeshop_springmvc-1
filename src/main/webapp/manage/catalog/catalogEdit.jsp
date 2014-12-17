@@ -33,7 +33,7 @@
 </head>
 
 <body>
-	<form action="catalog" namespace="/manage" theme="simple" id="form" name="form">
+	<form action="catalog" namespace="/manage" theme="simple" id="form" name="form" method="post">
 		<input id="catalogID" value="<c:out value="${e.pid}"/>" style="display: none;"/>
 		<input id="catalogID_currentID" value="<c:out value="${e.id}"/>" style="display: none;"/>
 		<input type="hidden" id="type" name="type"  value="${e.type}"/>

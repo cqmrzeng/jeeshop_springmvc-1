@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<form action="comment" namespace="/manage" theme="simple" name="form" id="form">
+	<form action="comment" namespace="/manage" theme="simple" name="form" id="form" method="post">
 		<table id="result_table" class="table table-bordered" style="width: 95%;margin: auto;">
 			<tr style="background-color: #dff0d8">
 				<td colspan="2" style="background-color: #dff0d8;text-align: center;">

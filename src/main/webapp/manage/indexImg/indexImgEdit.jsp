@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<form action="indexImg" namespace="/manage" theme="simple" enctype="multipart/form-data">
+	<form action="indexImg" namespace="/manage" theme="simple" enctype="multipart/form-data" method="post">
 		<span id="pifeSpan" class="input-group-addon" style="display:none"><%=SystemManager.systemSetting.getImageRootPath()%></span>
 		<table class="table table-bordered">
 			<tr style="background-color: #dff0d8">

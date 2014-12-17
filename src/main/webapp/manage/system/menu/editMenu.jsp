@@ -10,7 +10,7 @@
 <div style="text-align: center; border: 0px solid #999;margin: auto;">
 	<div style="text-align: center; border: 0px solid #999;
 		margin: auto;margin-top: 150px;">
-		<form action="menu" namespace="/manage" theme="simple">
+		<form action="menu" namespace="/manage" theme="simple" method="post">
 				<table>
 					<tr style="display: none;">
 						<th>id</th>
